@@ -1,0 +1,137 @@
+/* ===========================
+   MATERIAL DARK THEME
+   Enterprise Crawler UI
+   ===========================
+*/
+
+/* Global */
+QWidget {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+}
+
+/* Sidebar */
+#sidebar {
+    background-color: #1E1E1E;
+    border-right: 1px solid #2A2A2A;
+}
+
+#sidebar QLineEdit {
+    background-color: #2C2C2C;
+    border: 1px solid #3F3F3F;
+    padding: 6px;
+    border-radius: 4px;
+    color: #E0E0E0;
+}
+
+#sidebar QPushButton {
+    background-color: #2C2C2C;
+    border: 1px solid #3F3F3F;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#sidebar QPushButton:hover {
+    background-color: #3A3A3A;
+    border-color: #5A5A5A;
+}
+
+#sidebar QPushButton:pressed {
+    background-color: #505050;
+}
+
+/* Tabs */
+QTabWidget::pane {
+    border: none;
+}
+
+QTabBar::tab {
+    background: #1E1E1E;
+    padding: 10px 18px;
+    border: 1px solid #2C2C2C;
+    border-bottom: none;
+    color: #E0E0E0;
+}
+
+QTabBar::tab:selected {
+    background: #272727;
+    border-bottom: 2px solid #4CAF50;
+}
+
+QTabBar::tab:hover {
+    background: #2F2F2F;
+}
+
+/* QTextEdit */
+QTextEdit {
+    background-color: #181818;
+    border: 1px solid #2A2A2A;
+    padding: 10px;
+    color: #E0E0E0;
+    border-radius: 4px;
+}
+
+/* Scrollbar */
+QScrollBar:vertical {
+    background-color: #1E1E1E;
+    width: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #3A3A3A;
+    min-height: 20px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #555555;
+}
+
+QScrollBar::add-line,
+QScrollBar::sub-line {
+    background: none;
+    height: 0px;
+}
+
+/* Status Bar */
+QStatusBar {
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+}
+
+/* QFrame */
+QFrame {
+    background-color: #121212;
+}
+
+/* Buttons in Main Area */
+QPushButton {
+    background-color: #2D2D2D;
+    border: 1px solid #3A3A3A;
+    padding: 8px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #3A3A3A;
+}
+
+QPushButton:pressed {
+    background-color: #505050;
+}
+
+/* LineEdit Global */
+QLineEdit {
+    background-color: #1E1E1E;
+    border: 1px solid #333333;
+    color: #CCCCCC;
+    padding: 6px;
+    border-radius: 4px;
+}

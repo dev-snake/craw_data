@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Enterprise Web Crawler</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+
+   <layout class="QHBoxLayout" name="mainLayout">
+    <item>
+     <!-- Sidebar -->
+     <widget class="QFrame" name="sidebar" >
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="minimumWidth">
+       <number>220</number>
+      </property>
+
+      <layout class="QVBoxLayout" name="sidebarLayout">
+
+       <item>
+        <widget class="QLabel" name="labelTitle">
+         <property name="text">
+   <string>Enterprise Crawler</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font-size: 20px; font-weight: bold; color: #ffffff;</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QLineEdit" name="inputURL">
+         <property name="placeholderText">
+          <string>Enter URL to crawl...</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QPushButton" name="btnStart">
+         <property name="text">
+   <string>Start Crawling</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QPushButton" name="btnStop">
+         <property name="text">
+   <string>Stop</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QPushButton" name="btnLoadConfig">
+         <property name="text">
+          <string>Load Config</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QPushButton" name="btnSaveConfig">
+         <property name="text">
+          <string>Save Config</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <spacer name="sidebarSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+
+    <!-- MAIN PANEL -->
+    <item>
+     <widget class="QFrame" name="mainPanel">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+
+      <layout class="QVBoxLayout" name="mainPanelLayout">
+
+       <!-- Tabs -->
+       <item>
+        <widget class="QTabWidget" name="tabWidget">
+
+         <!-- Results -->
+         <widget class="QWidget" name="tabResults">
+          <attribute name="title">
+           <string>Results</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="resultsLayout">
+
+           <item>
+            <widget class="QTextEdit" name="textResult">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+
+          </layout>
+         </widget>
+
+         <!-- Logs -->
+         <widget class="QWidget" name="tabLogs">
+          <attribute name="title">
+           <string>Logs</string>
+          </attribute>
+
+          <layout class="QVBoxLayout" name="logLayout">
+           <item>
+            <widget class="QTextEdit" name="textLog">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+
+        </widget>
+       </item>
+
+      </layout>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
